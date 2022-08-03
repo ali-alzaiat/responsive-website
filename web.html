@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="widht=device-width,initial-scale=1">
+    <title>web project</title>
+    <link rel="stylesheet" href="web project.css">
+  </head>
+  <body>
+    <nav>
+      <ul class = "topnav" id="dropDown">
+        <li><a href="#HOME">HOME</a></li>
+        <li><a href="#PROJECTS">PROJECTS</a></li>
+        <li><a href="#ABOUT US">ABOUT US</a></li>
+        <li><a href="#CONTACT">CONTACT</a></li>
+        <li class="drop"><a href="javascript:void(0);" onclick="drop()">&#9776</a></li>
+        <li class = "rightside"><a href="#SIGN IN">SIGN IN</a></li>
+        <li class = "rightside"><a href="#SIGN UP">SIGN UP</a></li>
+      </ul>
+    </nav>
+    <div class="container bo">
+      <div class="body">
+        <h1>My website</h1>
+        <h2>Enter your information</h2>
+        <form class="" method="post">
+          <label>Username</label>
+          <br>
+          <input type="text" name="username" placeholder="Username">
+          <br>
+          <label>Password</label>
+          <br>
+          <input type="password" name="username" placeholder="Password">
+          <br>
+          <input type="submit" name="submit" class="submit">
+        </form>
+      </div>
+      <div class="photo">
+        <img src="https://gdj-inr5u0ip5pewom.stackpathdns.com/wp-content/uploads/2020/09/logo-design-7.jpg" alt="logo">
+      </div>
+    </div>
+    <div class="container text">
+      <h1>Visit my website</h1>
+      <div class="card">
+        <img src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/07/attachment_80660538-e1531899559548.jpg?auto=format&q=60&fit=max&w=930" alt="logo">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div class="card">
+        <img src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/07/attachment_80660538-e1531899559548.jpg?auto=format&q=60&fit=max&w=930" alt="logo">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div class="card">
+        <img src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/07/attachment_80660538-e1531899559548.jpg?auto=format&q=60&fit=max&w=930" alt="logo">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <button type="button" name="button">Learn more</button>
+    </div>
+    <hr>
+    <div class="container pa">
+      <h1>BUILD YOUR OWN WEBSITE</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    </div>
+
+    <script type="text/javascript">
+      function drop(){
+        var x = document.getElementById("dropDown");
+        if(x.className == "topnav"){
+          x.className += " mob";
+        }
+        else {
+          x.className = "topnav";
+        }
+      }
+
+    </script>
+
+  </body>
+</html>

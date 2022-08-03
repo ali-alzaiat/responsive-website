@@ -1,0 +1,270 @@
+body {
+  font-size: 18px;
+  margin: 0;
+  line-height: 1;
+}
+
+/* ################# NAVBAR ################### */
+
+nav {
+  display: block;
+  width: 100%;
+  top: 0;
+  position: sticky;
+  z-index: 100;
+}
+
+nav ul.topnav {
+  background-color: #bbb;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+ul.topnav li {
+  float: left;
+  list-style: none;
+}
+
+nav ul.topnav li.rightside {
+  float : right;
+}
+
+nav ul.topnav li a {
+  color: #666;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+}
+
+nav ul.topnav li a:hover {
+  color: white;
+  background-color: red;
+}
+
+nav ul.topnav li.drop {
+  display: none;
+}
+
+/* ############# body ########################### */
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12,auto);
+  grid-auto-rows: minmax(100px,auto);
+  grid-gap: 10px;
+  width: 100%;
+  padding: 20px;
+}
+
+.body h1 {
+  font-size: 60px;
+}
+
+.body h2 {
+  font-size: 40px;
+}
+
+
+.bo {
+  background-image: linear-gradient(red,#e39090);
+  color: white;
+}
+
+.container input {
+  margin: 20px 40px;
+  border-radius: 7px;
+}
+.container label {
+  margin: 40px;
+  font-size: 20px;
+}
+
+.container.bo button{
+  margin: 20px 40px;
+  font-size: 20px;
+}
+
+.container.bo .submit{
+  background-color: red;
+  width: 150px;
+  font-size: 20px;
+  color: white;
+}
+
+.container.bo .submit:hover {
+  background-color: black;
+}
+
+
+.container h1, .container h2{
+  margin-left: 40px;
+}
+
+
+.body {
+  grid-row: 1;
+  grid-column-start: 1;
+  grid-column-end: 7;
+}
+
+.photo img {
+  display: block;
+  width: 50%;
+  margin: auto;
+}
+
+.photo {
+  width: 100%;
+  grid-row: 1;
+  grid-column-start: 7;
+  grid-column-end: 13;
+  padding: 30px;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+/* ################### TEXT #########3############ */
+
+.text{
+  padding: 20px;
+}
+
+.text h1{
+  text-align: center;
+  font-size: 50px;
+  grid-column: 1 / 13;
+}
+.text p{
+  text-align: center;
+  font-size: 30;
+  margin: 8px;
+}
+
+.text img{
+  width: 50%;
+  height: 50px;
+  margin: auto;
+}
+
+.card {
+  text-align: center;
+  padding: 10px;
+  grid-column: span 4;
+  box-shadow: 0px 0px 3px 0px black , 0px 0px 5px 5px rgba(0,0,0,0.2);
+}
+
+.text button {
+  grid-column: span 12;
+}
+
+button{
+  font-size: 32px;
+  margin: auto;
+  background-color: red;
+  border-radius: 7px;
+  padding: 10px 55px;
+  border: 0px;
+  color: white;
+
+}
+
+button:hover {
+  background-color: black;
+}
+
+/* ################# PARAGRAPH####################### */
+
+.pa{
+  padding: 20px;
+}
+
+.pa h1 , .pa p{
+  grid-column: span 12;
+}
+
+.pa h1{
+  font-size: 60px;
+  text-align: center;
+}
+
+.pa p{
+  font-size: 30px;
+  text-align: center;
+}
+
+/* ############# MOBILE ######################### */
+@media screen and (max-width: 700px) {
+  nav ul.topnav li:not(:nth-child(1)){
+    display: none;
+  }
+
+  nav ul.topnav.mob  {
+    position: relative;
+    overflow: hidden;
+  }
+
+
+  nav ul.topnav.mob li {
+    display: inline;
+    float: none;
+  }
+
+  nav ul.topnav.mob a {
+    display: block;
+    text-align: left;
+  }
+
+  .container .body {
+    grid-row: 1;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    position: relative;
+    width: 100%;
+  }
+
+  nav ul.topnav li.drop {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    float: right;
+  }
+
+
+  .container .photo {
+    grid-row: 2;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    position: relative;
+    width: 100%;
+  }
+
+  .container .photo img {
+    position:relative;
+    width: 50%;
+    margin: auto;
+  }
+
+  .container {
+    text-overflow: clip;
+    position:relative;
+    overflow: hidden;
+  }
+
+  .card {
+    position:relative;
+    grid-column: span 12;
+  }
+
+  .pa h1{
+    font-size: 40px;
+  }
+
+  .pa p{
+    font-size: 20px;
+  }
+
+}
