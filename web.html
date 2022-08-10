@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="widht=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>web project</title>
     <link rel="stylesheet" href="web project.css">
   </head>
@@ -63,13 +63,8 @@
 
     <script type="text/javascript">
       function drop(){
-        var x = document.getElementById("dropDown");
-        if(x.className == "topnav"){
-          x.className += " mob";
-        }
-        else {
-          x.className = "topnav";
-        }
+        var dropDown = document.getElementById("dropDown");
+        dropDown.classList.toggle("mob");
       }
 
     </script>
